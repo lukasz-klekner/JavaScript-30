@@ -7,4 +7,5 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 ## The list of tasks:
 
 1. 09-02-2021 Day#1  JavaScript Drum Kit  [x]
-1. 10-02-2021 Day#2  JS and CSS Clock  [x]
+2. 10-02-2021 Day#2  JS and CSS Clock  [x]
+3. 11-02-2021 Day#3  CSS Variables  [x]

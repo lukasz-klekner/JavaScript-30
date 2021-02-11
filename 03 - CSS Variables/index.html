@@ -26,6 +26,17 @@
     /*
       misc styles, nothing to do with CSS variables
     */
+    :root {
+      --spacing: 10px;
+      --blur: 10px;
+      --base: #ffc600;
+    }
+
+    img {
+      padding: var(--spacing);
+      filter: blur(var(--blur));
+      background-color: var(--base);
+    }
 
     body {
       text-align: center;
@@ -46,6 +57,22 @@
   </style>
 
   <script>
+    const spacing = document.querySelector('[name="spacing"]');
+    const blur = document.querySelector('[name="blur"]');
+    const base = document.querySelector('[name="base"]');
+
+    const options = [spacing, blur, base];
+
+    options.forEach(option => option.addEventListener('input', (e) => {
+      const { value, id } = e.target;
+      console.log(option);
+
+      if (id == "base") {
+        document.documentElement.style.setProperty(`--${id}`, `${value}`)
+      } else {
+        document.documentElement.style.setProperty(`--${id}`, `${value}px`);
+      }
+    }))
   </script>
 
 </body>
