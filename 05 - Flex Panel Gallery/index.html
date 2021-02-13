@@ -36,6 +36,7 @@
     .panel {
       flex-grow: 1;
       display: flex;
+      flex-direction: column;
       background: #6B0F9C;
       box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
       color: white;
@@ -77,6 +78,7 @@
       margin: 0;
       width: 100%;
       transition: transform 0.5s;
+      flex: 1 0 auto;
     }
 
     .panel p {
@@ -84,12 +86,13 @@
       font-family: 'Amatic SC', cursive;
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       font-size: 2em;
-      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .panel p:nth-child(2) {
       font-size: 4em;
-      opacity: 1;
     }
 
     .panel.open {
@@ -127,7 +130,7 @@
   </div>
 
   <script>
-    const panels = document.querySelectorAll('.panel');
+
   </script>
 
 
