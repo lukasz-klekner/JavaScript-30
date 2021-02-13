@@ -10,3 +10,4 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 2. 10-02-2021 Day#2  JS and CSS Clock  [x]
 3. 11-02-2021 Day#3  CSS Variables  [x]
 4. 12-02-2021 Day#4  Array Cardio Day 1  [x]
+5. 13-02-2021 Day#5  Flex Panel Gallery  [x]

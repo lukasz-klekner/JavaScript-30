@@ -95,8 +95,25 @@
       font-size: 4em;
     }
 
+    .panel>p:nth-child(1) {
+      transform: translateY(-100%);
+    }
+
+    .panel.active>p:nth-child(1) {
+      transform: translateY(0);
+    }
+
+    .panel p:nth-child(3) {
+      transform: translateY(100%);
+    }
+
+    .panel.active p:nth-child(3) {
+      transform: translateY(0);
+    }
+
     .panel.open {
       font-size: 40px;
+      flex-grow: 3;
     }
   </style>
 
@@ -130,7 +147,20 @@
   </div>
 
   <script>
+    const panels = document.querySelectorAll('.panel');
 
+    function handleClick(e) {
+      e.currentTarget.classList.toggle('open');
+    }
+
+    function handleTransition(e) {
+      if (e.propertyName.includes('flex')) {
+        e.currentTarget.classList.toggle('active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', handleClick))
+    panels.forEach(panel => panel.addEventListener('transitionend', handleTransition))
   </script>
 
 
