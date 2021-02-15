@@ -12,3 +12,4 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 4. 12-02-2021 Day#4  Array Cardio Day 1  [x]
 5. 13-02-2021 Day#5  Flex Panel Gallery  [x]
 6. 14-02-2021 Day#6  Type Ahead  [x]
+7. 15-02-2021 Day#7  Array Cardio Day 2  [x]
