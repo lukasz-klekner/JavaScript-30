@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>HTML5 Canvas</title>
 </head>
-<body>
-<canvas id="draw" width="800" height="800"></canvas>
-<script>
-</script>
 
-<style>
-  html, body {
-    margin: 0;
-  }
-</style>
+<body>
+  <canvas id="draw" width="800" height="800"></canvas>
+  <script>
+    const canvas = document.querySelector('#draw');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let x = 0;
+    let y = 0;
+    let isDrawing = false;
+
+    function drawLine(x1, y1, x2, y2) {
+      console.log('Works!');
+      ctx.lineJoin = 'round';
+      ctx.lineCap = 'round';
+      ctx.lineWidth = 10;
+
+      ctx.beginPath();
+      ctx.strokeStyle = `hsl(${Math.random() * 360}, 100%, 50%)`;
+      ctx.lineWidth = Math.random() * 25;
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+    }
+
+    canvas.addEventListener('mousedown', e => {
+      x = e.offsetX;
+      y = e.offsetY;
+      isDrawing = true;
+      // console.log(x, y, isDrawing)
+    })
+
+    canvas.addEventListener('mousemove', e => {
+      if (isDrawing) {
+        drawLine(x, y, e.offsetX, e.offsetY)
+        x = e.offsetX;
+        y = e.offsetY;
+      }
+      //console.log(x, y)
+    })
+
+    canvas.addEventListener('mouseup', e => {
+      if (isDrawing) {
+        drawLine(x, y, e.offsetX, e.offsetY);
+        x = 0;
+        y = 0;
+        isDrawing = false;
+      }
+    })
+
+  </script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+  </style>
 
 </body>
+
 </html>
