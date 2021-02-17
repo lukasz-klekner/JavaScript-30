@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Console Tricks!</title>
 </head>
+
 <body>
 
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
@@ -18,29 +20,67 @@
     }
 
     // Regular
+    console.log('Another day with the challenge!');
 
     // Interpolated
+    console.log('%s day with the challenge!', 'The ninth');
 
     // Styled
+    console.log('%c This is bigger string than usually in the console! WOW!', 'font-size: 20px; color: blue;')
 
     // warning!
+    console.warn('This is a warn! Be careful!');
 
     // Error :|
+    console.error('This is an error! Try again! Don\'t give up!');
 
     // Info
+    console.info('It will be starting another match in 10 minutes! Players are warming up! Be ready!');
 
     // Testing
+    console.assert(1 === 1, 'This isn\'t eqaul ;/');
+    console.assert(1 === 0, 'This isn\'t eqaul ;/');
 
     // clearing
+    console.clear();
 
     // Viewing DOM Elements
+    const p = document.querySelector('p');
+    console.log(p);
+    console.dir(p);
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`)
+      console.log(`My dog is called ${dog.name}`)
+      console.log(`He is ${dog.age} years old`)
+      console.groupEnd(`Dog: ${dogs.name}`)
+    })
 
     // counting
+    console.count('First group')
+    console.count('First group')
+    console.count('First group')
+    console.count('First group')
+    console.count('First group')
+    console.count('First group')
+
+    console.count('Second group')
+    console.count('Second group')
+    console.count('Second group')
+
+    console.clear();
 
     // timing
+    console.time('SetTimeOut')
+
+    setTimeout(function () {
+      p.textContent = 'Good morning!'
+    }, 1000)
+
+    console.timeEnd('SetTimeOut')
 
   </script>
 </body>
+
 </html>
