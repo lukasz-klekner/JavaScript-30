@@ -16,6 +16,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
  8. 16-02-2021 Day#8  Fun with HTML5 Canvas  [x]
  9. 17-02-2021 Day#9  Dev Tools Domination  [x]
 10. 18-02-2021 Day#10  Hold Shift and Check Checkboxes  [x]
+11. 19-02-2021 Day#11  Custom Video Player  [x]
 
 
 
