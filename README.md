@@ -19,6 +19,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 11. 19-02-2021 Day#11  Custom Video Player  [x]
 12. 20-02-2021 Day#12  Key Sequence Detection  [x]
 13. 21-02-2021 Day#13  Slide in on Scroll  [x]
+14. 22-02-2021 Day#14  JavaScript References VS Copying  [x]
 
 
 
