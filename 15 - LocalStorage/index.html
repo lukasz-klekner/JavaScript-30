@@ -41,6 +41,7 @@
       <input type="submit" value="+ Add Item">
       <input type="button" name="check-all" value="Check all">
       <input type="button" name="uncheck-all" value="Uncheck all">
+      <input type="button" name="remove" value="Remove selected items">
     </form>
   </div>
 
@@ -49,7 +50,8 @@
     const itemsList = document.querySelector('.plates');
     const checkAll = document.querySelector('[name="check-all"]');
     const unCheckAll = document.querySelector('[name="uncheck-all"]')
-    const items = [];
+    const removeBtn = document.querySelector('[name="remove"]');
+    let items = [];
 
     function mirrorDataFromLocalStorage() {
       const itemsFromLS = JSON.parse(localStorage.getItem('item'));
@@ -96,6 +98,12 @@
       updateLocalStorage(items);
     }
 
+    function removeSelectedItems() {
+      items = items.filter(item => item.complete !== true)
+      displayItems();
+      updateLocalStorage(items);
+    }
+
     addItems.addEventListener('submit', addItem);
     itemsList.addEventListener('click', (e) => {
       if (e.target.matches('[type="checkbox"]')) {
@@ -108,6 +116,7 @@
 
     checkAll.addEventListener('click', checkAllItems);
     unCheckAll.addEventListener('click', unCheckAllItems);
+    removeBtn.addEventListener('click', removeSelectedItems);
 
 
     mirrorDataFromLocalStorage();
