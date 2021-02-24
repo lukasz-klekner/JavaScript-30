@@ -21,6 +21,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 13. 21-02-2021 Day#13  Slide in on Scroll  [x]
 14. 22-02-2021 Day#14  JavaScript References VS Copying  [x]
 15. 23-02-2021 Day#15  LocalStorage  [x]
+16. 24-02-2021 Day#16  Mouse Move Shadow  [x]
 
 
 
