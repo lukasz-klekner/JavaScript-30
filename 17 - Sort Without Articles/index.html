@@ -49,6 +49,38 @@
   <script>
     const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
+    const ul = document.querySelector('#bands');
+
+    const sortedBands = bands.sort();
+    const sortedBandsWithoutArticles = sortedBands.sort((a, b) => {
+      if (a.substring(0, 2) == 'A ') {
+        a = a.substring(2)
+      } else if (a.substring(0, 3) == 'An ') {
+        a = a.substring(3)
+      } else if (a.substring(0, 4) == 'The ') {
+        a = a.substring(4)
+      }
+
+      if (b.substring(0, 2) == 'A ') {
+        b = b.substring(2)
+      } else if (b.substring(0, 3) == 'An ') {
+        b = b.substring(3)
+      } else if (b.substring(0, 4) == 'The ') {
+        b = b.substring(4)
+      }
+
+      if (a > b) {
+        return 1;
+      }
+      if (b > a) {
+        return -1;
+      }
+      return 0;
+    })
+
+    ul.innerHTML = sortedBandsWithoutArticles.map(string => `
+      <li>${string}</li>
+    `).join('');
 
   </script>
 
