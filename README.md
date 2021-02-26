@@ -23,6 +23,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 15. 23-02-2021 Day#15  LocalStorage  [x]
 16. 24-02-2021 Day#16  Mouse Move Shadow  [x]
 17. 25-02-2021 Day#17  Sort Without Articles  [x]
+18. 26-02-2021 Day#18  Adding Up Times with Reduce [x]
 
 
 
