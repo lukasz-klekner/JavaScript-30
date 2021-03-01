@@ -26,6 +26,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 18. 26-02-2021 Day#18  Adding Up Times with Reduce [x]
 19. 27-02-2021 Day#19  Webcam Fun [x]
 20. 28-02-2021 Day#20  Speech Detection [x]
+21. 01-03-2021 Day#21  Geolocation [x]
 
 
 
