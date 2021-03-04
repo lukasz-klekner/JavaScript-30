@@ -29,6 +29,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 21. 01-03-2021 Day#21  Geolocation [x]
 22. 02-03-2021 Day#22  Follow Along Link Highlighter [x]
 23. 03-03-2021 Day#23  Speech Synthesis [x]
+24. 04-03-2021 Day#24  Sticky Nav [x]
 
 
 
