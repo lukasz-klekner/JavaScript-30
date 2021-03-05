@@ -30,6 +30,7 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 22. 02-03-2021 Day#22  Follow Along Link Highlighter [x]
 23. 03-03-2021 Day#23  Speech Synthesis [x]
 24. 04-03-2021 Day#24  Sticky Nav [x]
+25. 05-03-2021 Day#25  Event Capture, Propagation, Bubbling and Once [x]
 
 
 
