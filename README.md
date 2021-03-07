@@ -32,3 +32,4 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 24. 04-03-2021 Day#24 Sticky Nav [x]
 25. 05-03-2021 Day#25 Event Capture, Propagation, Bubbling and Once [x]
 26. 06-03-2021 Day#26 Stripe Follow Along Nav [x]
+27. 07-03-2021 Day#27 Click and Drag [x]
