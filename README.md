@@ -34,3 +34,4 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 26. 06-03-2021 Day#26 Stripe Follow Along Nav [x]
 27. 07-03-2021 Day#27 Click and Drag [x]
 28. 08-03-2021 Day#28 Video Speed Controller [x]
+29. 09-03-2021 Day#29 Countdown Timer [x]
