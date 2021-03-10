@@ -35,3 +35,4 @@ This repo contains all the tasks that were created over the Wes Boss's course [J
 27. 07-03-2021 Day#27 Click and Drag [x]
 28. 08-03-2021 Day#28 Video Speed Controller [x]
 29. 09-03-2021 Day#29 Countdown Timer [x]
+30. 10-03-2021 Day#30 Whack A Mole [x]
